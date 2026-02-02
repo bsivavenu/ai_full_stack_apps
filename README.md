@@ -43,22 +43,12 @@ ai_full_stack_apps/
 └── .gitignore
 ```
 
-## Future Projects
-
-Add more full-stack applications here:
-- `nextjs-express-fullstack/`
-- `svelte-django-app/`
-- etc.
 
 ## Prerequisites
 
 - **Node.js 16+** and npm
 - **Python 3.12+**
 - OpenAI API key
-
-## Contributing
-
-Each project is independent. Refer to individual project READMEs for specific setup and contribution guidelines.
 
 ## License
 
