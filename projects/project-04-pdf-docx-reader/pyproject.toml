@@ -1,0 +1,15 @@
+[project]
+name = "project-04-pdf-docx-reader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.128.2",
+    "openai>=2.17.0",
+    "pypdf2>=3.0.1",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.1",
+    "python-multipart>=0.0.22",
+    "uvicorn>=0.40.0",
+]
