@@ -1,19 +1,7 @@
-# db.py
-import sqlite3
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
-conn = sqlite3.connect("invoices.db")
-cursor = conn.cursor()
+DATABASE_URL = "sqlite:///./invoices.db"
 
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS invoices (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    file_name TEXT,
-    vendor TEXT,
-    invoice_number TEXT,
-    date TEXT,
-    total_amount REAL
-)
-""")
-
-conn.commit()
-conn.close()
+engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
